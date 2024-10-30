@@ -8,7 +8,7 @@ from matplotlib import font_manager
 # /mount/src/zlhs_score/requirements.txt 
 def create_performance_report(student_scores, class_data):
     # Set font family for Chinese characters
-    font_dirs = ["/mount/src/zlhs_score/Microsoft-JhengHei.ttf"]  # The path to the custom font file.
+    font_dirs = ["/mount/src/zlhs_score/font/"]  # The path to the custom font file.
     font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
     # font_set = {f.name for f in font_manager.fontManager.ttflist}
     # for f in font_set:
