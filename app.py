@@ -16,7 +16,7 @@ def create_performance_report(student_scores, class_data):
     for font_file in font_files:
         font_manager.fontManager.addfont(font_file)
     # matplotlib.rc('font', family='Microsoft-JhengHei')
-    plt.rcParams['font.family']  = ['Microsoft JhengHei']
+    plt.rcParams['font.family']  = 'Microsoft-JhengHei'
     plt.rcParams['axes.unicode_minus'] = False
     
     # Convert class data
