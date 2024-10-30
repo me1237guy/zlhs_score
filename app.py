@@ -15,7 +15,7 @@ def create_performance_report(student_scores, class_data):
     #     print(f)
     # for font_file in font_files:
     #     font_manager.fontManager.addfont(font_file)
-    fontManager.addfont('./font/Microsoft-JhengHei.ttf')
+    fontManager.addfont('/mount/src/zlhs_score/font/Microsoft-JhengHei.ttf')
     matplotlib.rc('font', family='Microsoft-JhengHei')
     # matplotlib.rc('font', family='Microsoft-JhengHei')
     # plt.rcParams['font.family']  = 'Microsoft-JhengHei'
