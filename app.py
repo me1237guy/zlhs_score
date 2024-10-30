@@ -4,9 +4,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
 def create_performance_report(student_scores, class_data):
     # Set font family for Chinese characters
-    plt.rcParams['font.family'] = ['Microsoft JhengHei', 'Arial Unicode MS', 'SimHei', 'sans-serif']
+    plt.rcParams['font.family'] = ['Microsoft JhengHei', 'Arial Unicode MS', 'sans-serif']
     plt.rcParams['axes.unicode_minus'] = False
     
     # Convert class data
