@@ -4,18 +4,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib import font_manager
-import matplotlib
-
+# import matplotlib
+# /mount/src/zlhs_score/requirements.txt 
 def create_performance_report(student_scores, class_data):
     # Set font family for Chinese characters
-    font_dirs = ["Microsoft-JhengHei.ttf"]  # The path to the custom font file.
+    font_dirs = ["/mount/src/zlhs_score/Microsoft-JhengHei.ttf"]  # The path to the custom font file.
     font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
     # font_set = {f.name for f in font_manager.fontManager.ttflist}
     # for f in font_set:
     #     print(f)
-    # for font_file in font_files:
-    #     font_manager.fontManager.addfont(font_file)
-    matplotlib.rc('font', family='Microsoft-JhengHei')
+    for font_file in font_files:
+        font_manager.fontManager.addfont(font_file)
+    # matplotlib.rc('font', family='Microsoft-JhengHei')
     plt.rcParams['font.family']  = ['Microsoft-JhengHei']
     plt.rcParams['axes.unicode_minus'] = False
     
