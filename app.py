@@ -3,10 +3,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+from matplotlib import font_manager
 
 def create_performance_report(student_scores, class_data):
     # Set font family for Chinese characters
+    font_dirs = ["./Microsoft-JhengHei.ttf"]  # The path to the custom font file.
+    font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
+    
+    for font_file in font_files:
+        font_manager.fontManager.addfont(font_file)
     plt.rcParams['font.family'] = ['Microsoft JhengHei', 'Arial Unicode MS', 'sans-serif']
     plt.rcParams['axes.unicode_minus'] = False
     
