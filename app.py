@@ -9,7 +9,9 @@ def create_performance_report(student_scores, class_data):
     # Set font family for Chinese characters
     font_dirs = ["Microsoft-JhengHei.ttf"]  # The path to the custom font file.
     font_files = font_manager.findSystemFonts(fontpaths=font_dirs)
-    
+    font_set = {f.name for f in font_manager.fontManager.ttflist}
+    for f in font_set:
+        print(f)
     for font_file in font_files:
         font_manager.fontManager.addfont(font_file)
     plt.rcParams['font.sans-serif'] = ['Microsoft-JhengHei']
